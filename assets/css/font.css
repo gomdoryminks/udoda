@@ -9,7 +9,7 @@
     U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E : 특수문자
 */
 
-@import url('http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
 
 @font-face {
     font-family: 'Pretendard-Regular';
