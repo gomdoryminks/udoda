@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:url" content="">
+        <meta property="og:title" content="우도다">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="assets/img/logo-favicon.ico">
+        <meta property="og:description" content="우도다">
+		<title>우도다</title>
+		<meta name="description" content="우도다">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<link rel="shortcut icon" href="assets/img/logo-favicon.ico">
+		<link rel="apple-touch-icon" href="assets/img/logo-favicon.ico">
+		
+		<link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/font.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/elisyam-1.5.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/swiper.min.css" type="text/css" rel="stylesheet">
+		<link href="assets/css/common.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/mobile-main.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+		<script src="assets/js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="assets/js/jquery-migrate-1.4.1.min.js"></script>
+        <script src="assets/vendors/js/base/core.js"></script>
+        <script src="assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+        <script src="assets/vendors/js/app/app.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment-with-locales.js"></script>
+        <script src="assets/vendors/js/datepicker/daterangepicker.js"></script>
+        <script src="assets/js/components/datepicker/daterangepicker.js"></script>
+		<script src="assets/js/swiper.min.js"></script>
+        <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7c27b395b09309e57fc0371fe6668b50&libraries=services,clusterer" type="text/javascript"></script>
+        <script src="assets/js/mobile-map.js"></script>
+        <script src="assets/js/mobile-main.js"></script>
+	</head>
+
+	<body>
+		<div class="m-wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not-view">header</h1>
+                
+                <div class="header-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="로고"></a>
+                </div>
+                
+                <div class="header-menu">
+                    <div class="menu-btn"><img src="assets/img/btn_menu.png" alt="메뉴"></div>
+                    
+                    <div class="menu-area">
+                        <div class="menu-mask"></div>
+                        <div class="menu-box">
+                            <div class="menu-box-btn"><img src="assets/img/close_white.png" alt="메뉴닫기"></div>
+                            <ul class="menu-box-top cf">
+                                <li><a href="login-index.html">로그인</a></li>
+                                <li><a href="join-email.html">회원가입</a></li>
+                            </ul>
+                            <div class="menu-box-content">
+                                <ul class="menu-box-list cf">
+                                    <li><a href="notice-list.html">공지사항</a></li>
+                                    <li><a href="faq-list.html">고객센터</a></li>
+                                    <li><a href="order-list.html">주문내역 <span>(9개)</span></a></li>
+                                    <li><a href="voucher-list.html">나의바우처 <span>(15개)</span></a></li>
+                                    <li><a href="inquiry-list.html">상품문의 <span>(0개)</span></a></li>
+                                    <li><a href="setting.html">설정</a></li>
+                                </ul>
+                                <!-- footer -->
+                                <footer class="footer">
+                                    <h1 class="not-view">footer</h1>
+
+                                    <ul class="footer-link-list cf">
+                                        <li><a href="agreement.html">서비스이용약관</a></li>
+                                        <li><a href="policy.html">개인정보처리방침</a></li>
+                                    </ul>
+                                    <div class="footer-info">
+                                        제이아이엔 시스템 (주) 대표 김병석<br>사업자등록번호 353-81-01256<br>통신판매업신고번호<br>제주특별자치도 제주시 첨단로 199 MJ벤처오름 212호<br>문의 064-722-0442<br>고객센터 cs@jin-system.kr
+                                    </div>
+                                </footer>
+                            </div>
+                            <!-- //footer -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header-search">
+                    <a href="search.html"><img src="assets/img/btn_search.png" alt="검색"></a>
+                </div>
+            </header>
+            <!-- //header -->
+            
+            <!-- nav -->
+            <nav class="nav">
+                <h1 class="not-view">nav</h1>
+                
+                <ul class="nav-list cf">
+                    <li class="nav-attraction">
+                        <a href="attraction-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">우도여행지</div>
+                        </a>
+                    </li>
+                    <li class="nav-activity">
+                        <a href="activity-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">렌트·숙박<br>액티비티</div>
+                        </a>
+                    </li>
+                    <li class="nav-magazine">
+                        <a href="magazine-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">매거진</div>
+                        </a>
+                    </li>
+                    <li class="nav-tourcart">
+                        <a href="tourcart.html">
+                            <div class="nav-img"><span class="nav-cnt" id="tourcart-cnt">0</span></div>
+                            <div class="nav-tit">여행카트</div>
+                        </a>
+                    </li>
+                    <li class="nav-buycart">
+                        <a href="buycart.html">
+                            <div class="nav-img"><span class="nav-cnt" id="buycart-cnt">00</span></div>
+                            <div class="nav-tit">구매카트</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+			
+			<!-- content -->
+            <div class="c-wrap">
+                <!-- 바우처 페이지 -->
+                <section class="c-voucher">
+                    <!-- 페이지 상단바 -->
+                    <div class="c-topbar-area">
+                        <div class="c-topbar-left">
+                            <a href="javascript:history.back();"><img src="assets/img/btn_previous.png" alt="뒤로가기"></a>
+                        </div>
+                        
+                        <div class="c-topbar-center">나의 바우처</div>
+                    </div>
+                    
+                    <div class="voucher-area">
+                        <!-- 바우처 리스트 -->
+                        <ul class="voucher-list cf">
+                            <li>
+                                <div class="voucher-list-top">
+                                    <div class="voucher-img">
+                                        <img src="assets/img/img_제트보트.jpg" alt="바우처이미지">
+                                    </div>
+                                    <div class="voucher-txt">
+                                        <div class="voucher-category">렌트/액티비티</div>
+                                        <div class="voucher-tit">제주 우도 월드 제트보트 체험</div>
+                                    </div>
+                                </div>
+                                <div class="voucher-list-bottom">
+                                    <button type="button" class="voucher-btn layer-open-btn" data-voucher-idx="1" onclick="openVoucherDetailLayer(this);">바우처 보기</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="voucher-list-top">
+                                    <div class="voucher-img">
+                                        <img src="assets/img/img_제트보트.jpg" alt="바우처이미지">
+                                    </div>
+                                    <div class="voucher-txt">
+                                        <div class="voucher-category">렌트/액티비티</div>
+                                        <div class="voucher-tit">제주 우도 월드 제트보트 체험</div>
+                                    </div>
+                                </div>
+                                <div class="voucher-list-bottom">
+                                    <button type="button" class="voucher-btn layer-open-btn" data-voucher-idx="2" onclick="openVoucherDetailLayer(this);">바우처 보기</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="voucher-list-top">
+                                    <div class="voucher-img">
+                                        <img src="assets/img/img_제트보트.jpg" alt="바우처이미지">
+                                    </div>
+                                    <div class="voucher-txt">
+                                        <div class="voucher-category">렌트/액티비티</div>
+                                        <div class="voucher-tit">제주 우도 월드 제트보트 체험</div>
+                                    </div>
+                                </div>
+                                <div class="voucher-list-bottom">
+                                    <button type="button" class="voucher-btn layer-open-btn" data-voucher-idx="3" onclick="openVoucherDetailLayer(this);">바우처 보기</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="voucher-list-top">
+                                    <div class="voucher-img">
+                                        <img src="assets/img/img_제트보트.jpg" alt="바우처이미지">
+                                    </div>
+                                    <div class="voucher-txt">
+                                        <div class="voucher-category">렌트/액티비티</div>
+                                        <div class="voucher-tit">제주 우도 월드 제트보트 체험</div>
+                                    </div>
+                                </div>
+                                <div class="voucher-list-bottom">
+                                    <button type="button" class="voucher-btn layer-open-btn" data-voucher-idx="4" onclick="openVoucherDetailLayer(this);">바우처 보기</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 리스트 페이징 -->
+                        <div class="c-pagination-area">
+                            <ul class="cf">
+                                <li><a href="#" class="pagination-page disabled">&lt;</a></li>
+                                <li><a href="#" class="pagination-page on">1</a></li>
+                                <li><a href="#" class="pagination-page">2</a></li>
+                                <li><a href="#" class="pagination-page">3</a></li>
+                                <li><a href="#" class="pagination-page">4</a></li>
+                                <li><a href="#" class="pagination-page">5</a></li>
+                                <li><a href="#" class="pagination-page">&gt;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- //content -->
+            
+            <!-- layer -->
+            <div class="layer-wrap" id="alert-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn confirm-btn">확인</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layer-wrap" id="confirm-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn half-btn confirm-btn">확인</button>
+                        <button type="button" class="layer-btn half-btn close-btn" onclick="closeLayer(this);">취소</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 바우처 상세 -->
+            <div class="layer-wrap layer-all-wrap" id="voucher-detail-layer">
+                <button type="button" class="layer-hidden-btn" onclick="closeLayer(this);">닫기</button>
+                <div class="layer-box">
+                    <!-- 레이어 제목 -->
+                    <div class="layer-title">
+                        <button type="button" class="layer-left-btn layer-img-btn layer-close-btn" onclick="closeLayer(this);"><img src="assets/img/btn_previous.png" alt="레이어닫기"></button>
+                        <div class="layer-title-txt">나의 바우처</div>
+                    </div>
+                    <!-- 레이어 내용 -->
+                    <div class="layer-content">
+                        <!-- 탭 -->
+                        <div class="c-tab">
+                            <div class="c-tab-item">
+                                <a href="javascript:void(0);" data-tab="voucherinfo" onclick="setContentTab(this);">바우처</a>
+                            </div>
+                            <div class="c-tab-item">
+                                <a href="javascript:void(0);" data-tab="voucherexplain" onclick="setContentTab(this);">사용방법</a>
+                            </div>
+                        </div>
+
+                        <!-- 탭에 따라 c-tab-info 클래스 태그 안의 내용이 변경됨 -->
+                        <div class="c-tab-info" id="c-tab-voucherinfo">
+                            <div class="layer-voucher-tit">제주 우도 월드 제트보트 체험</div>
+                            <table class="c-table">
+                                <colgroup>
+                                    <col width="25%">
+                                    <col width="75%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>구매자명</th>
+                                        <td>trip@udoda.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>예약번호</th>
+                                        <td>202112345678900</td>
+                                    </tr>
+                                    <tr>
+                                        <th>유효기간</th>
+                                        <td>2021.10.24 ~ 2021.11.24</td>
+                                    </tr>
+                                    <tr>
+                                        <th>문의</th>
+                                        <td>010-1234-5678</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <ul class="layer-voucher-ticket cf">
+                                <li>
+                                    <div class="voucher-ticket-tit">성인</div>
+                                    <div class="voucher-ticket-ea">2매</div>
+                                </li>
+                                <li>
+                                    <div class="voucher-ticket-tit">청소년</div>
+                                    <div class="voucher-ticket-ea">2매</div>
+                                </li>
+                            </ul>
+                            <div class="layer-voucher-qrcode">
+                                <img src="assets/img/img_qrcode.jpg" alt="바우처QR코드">
+                            </div>
+                        </div>
+                        
+                        <!-- 탭에 따라 c-tab-info 클래스 태그 안의 내용이 변경됨 -->
+                        <div class="c-tab-info" id="c-tab-voucherexplain">
+                            <div class="layer-voucher-explain">
+                                <div class="voucher-explain-item">해당 바우처를 매표소 또는 직원에게 제시해주세요.</div>
+                                <div class="voucher-explain-item">구매내역 인원 기준으로 입장하셔야 합니다. (중복사용 불가)</div>
+                                <div class="voucher-explain-item">타 관광지 할인쿠폰과 중복할인이 불가합니다.</div>
+                                <div class="voucher-explain-item">운영마감시간 1시간 전까지 입장해주셔야 관람이 편리하며, 우도에서 나가는 마지막 배시간을 꼭 확인해주세요.</div>
+                                <div class="voucher-explain-item">기상 악화시에는 이용이 불가할 수 있으니 해당 업체로 직접 문의 후 이용바랍니다.</div>
+                            </div>
+                            <div class="layer-voucher-guide">
+                                <div class="voucher-guide-big">판매자 안내사항</div>
+                                <div class="voucher-guide-tit">◆ 포함 사항</div>
+                                <div class="voucher-guide-con">무료 셔틀버스<br>안전장치 (장비, 요원 등)<br>물품 보관소<br>주차장</div>
+                                <div class="voucher-guide-tit">◆ 포함 사항</div>
+                                <div class="voucher-guide-con">구매 옵션별 포함사항 제외한 일체</div>
+                            </div>
+                            <div class="layer-voucher-warning">※ 우도다에 등록된 판매상품과 상품의 내용은 판매자가 등록한 것으로 진시스템 주식회사에서는 그 등록내역에 대하여 일체의 책임을 지지 않습니다.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //layer -->
+		</div>
+	</body>
+</html>

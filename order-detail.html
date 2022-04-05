@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:url" content="">
+        <meta property="og:title" content="우도다">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="assets/img/logo-favicon.ico">
+        <meta property="og:description" content="우도다">
+		<title>우도다</title>
+		<meta name="description" content="우도다">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<link rel="shortcut icon" href="assets/img/logo-favicon.ico">
+		<link rel="apple-touch-icon" href="assets/img/logo-favicon.ico">
+		
+		<link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/font.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/elisyam-1.5.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/swiper.min.css" type="text/css" rel="stylesheet">
+		<link href="assets/css/common.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/mobile-main.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+		<script src="assets/js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="assets/js/jquery-migrate-1.4.1.min.js"></script>
+        <script src="assets/vendors/js/base/core.js"></script>
+        <script src="assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+        <script src="assets/vendors/js/app/app.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment-with-locales.js"></script>
+        <script src="assets/vendors/js/datepicker/daterangepicker.js"></script>
+        <script src="assets/js/components/datepicker/daterangepicker.js"></script>
+		<script src="assets/js/swiper.min.js"></script>
+        <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7c27b395b09309e57fc0371fe6668b50&libraries=services,clusterer" type="text/javascript"></script>
+        <script src="assets/js/mobile-map.js"></script>
+        <script src="assets/js/mobile-main.js"></script>
+	</head>
+
+	<body>
+		<div class="m-wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not-view">header</h1>
+                
+                <div class="header-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="로고"></a>
+                </div>
+                
+                <div class="header-menu">
+                    <div class="menu-btn"><img src="assets/img/btn_menu.png" alt="메뉴"></div>
+                    
+                    <div class="menu-area">
+                        <div class="menu-mask"></div>
+                        <div class="menu-box">
+                            <div class="menu-box-btn"><img src="assets/img/close_white.png" alt="메뉴닫기"></div>
+                            <ul class="menu-box-top cf">
+                                <li><a href="login-index.html">로그인</a></li>
+                                <li><a href="join-email.html">회원가입</a></li>
+                            </ul>
+                            <div class="menu-box-content">
+                                <ul class="menu-box-list cf">
+                                    <li><a href="notice-list.html">공지사항</a></li>
+                                    <li><a href="faq-list.html">고객센터</a></li>
+                                    <li><a href="order-list.html">주문내역 <span>(9개)</span></a></li>
+                                    <li><a href="voucher-list.html">나의바우처 <span>(15개)</span></a></li>
+                                    <li><a href="inquiry-list.html">상품문의 <span>(0개)</span></a></li>
+                                    <li><a href="setting.html">설정</a></li>
+                                </ul>
+                                <!-- footer -->
+                                <footer class="footer">
+                                    <h1 class="not-view">footer</h1>
+
+                                    <ul class="footer-link-list cf">
+                                        <li><a href="agreement.html">서비스이용약관</a></li>
+                                        <li><a href="policy.html">개인정보처리방침</a></li>
+                                    </ul>
+                                    <div class="footer-info">
+                                        제이아이엔 시스템 (주) 대표 김병석<br>사업자등록번호 353-81-01256<br>통신판매업신고번호<br>제주특별자치도 제주시 첨단로 199 MJ벤처오름 212호<br>문의 064-722-0442<br>고객센터 cs@jin-system.kr
+                                    </div>
+                                </footer>
+                            </div>
+                            <!-- //footer -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header-search">
+                    <a href="search.html"><img src="assets/img/btn_search.png" alt="검색"></a>
+                </div>
+            </header>
+            <!-- //header -->
+            
+            <!-- nav -->
+            <nav class="nav">
+                <h1 class="not-view">nav</h1>
+                
+                <ul class="nav-list cf">
+                    <li class="nav-attraction">
+                        <a href="attraction-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">우도여행지</div>
+                        </a>
+                    </li>
+                    <li class="nav-activity">
+                        <a href="activity-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">렌트·숙박<br>액티비티</div>
+                        </a>
+                    </li>
+                    <li class="nav-magazine">
+                        <a href="magazine-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">매거진</div>
+                        </a>
+                    </li>
+                    <li class="nav-tourcart">
+                        <a href="tourcart.html">
+                            <div class="nav-img"><span class="nav-cnt" id="tourcart-cnt">0</span></div>
+                            <div class="nav-tit">여행카트</div>
+                        </a>
+                    </li>
+                    <li class="nav-buycart">
+                        <a href="buycart.html">
+                            <div class="nav-img"><span class="nav-cnt" id="buycart-cnt">00</span></div>
+                            <div class="nav-tit">구매카트</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+			
+			<!-- content -->
+            <div class="c-wrap">
+                <!-- 주문내역 페이지 -->
+                <section class="c-order">
+                    <!-- 페이지 상단바 -->
+                    <div class="c-topbar-area">
+                        <div class="c-topbar-left">
+                            <a href="javascript:history.back();"><img src="assets/img/btn_previous.png" alt="뒤로가기"></a>
+                        </div>
+                        
+                        <div class="c-topbar-center">주문내역</div>
+                    </div>
+                    
+                    <div class="order-area">
+                        <!-- 주문내역 상세 상품정보 -->
+                        <article class="order-goods-area">
+                            <div class="order-goods-top">
+                                <div class="goods-top-txt">
+                                    <div class="tit">A222031815481</div>
+                                    <div class="date">2021.05.24</div>
+                                </div>
+                                <div class="goods-top-btn cf">
+                                    <div class="chkbox">
+                                        <input type="checkbox" name="order_info_all" id="order_info_all" value="all">
+                                        <label for="order_info_all"></label>
+                                    </div>
+                                    <div class="cancel-btn">
+                                        <button type="button" class="order-default-btn" onclick="openOrderCancelLayer();">주문취소</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="order-goods-info cf">
+                                <li>
+                                    <div class="goods-info-top">
+                                        <div class="goods-info-content">
+                                            <div class="goods-info-img">
+                                                <img src="assets/img/img_주문내역썸네일.png" alt="주문내역이미지">
+                                            </div>
+                                            <div class="goods-info-txt">
+                                                <div class="goods-info-category">렌트/액티비티</div>
+                                                <div class="goods-info-tit">우도씽씽이</div>
+                                            </div>
+                                        </div>
+                                        <div class="goods-info-option cf">
+                                            <div class="option-tit">성인</div>
+                                            <div class="option-ea">2매</div>
+                                            <div class="option-price">10,000원</div>
+                                        </div>
+                                        <div class="goods-info-option cf">
+                                            <div class="option-tit">청소년</div>
+                                            <div class="option-ea">1매</div>
+                                            <div class="option-price">8,000원</div>
+                                        </div>
+                                        <div class="goods-info-option cf">
+                                            <div class="option-tit">소인</div>
+                                            <div class="option-ea">3매</div>
+                                            <div class="option-price">5,000원</div>
+                                        </div>
+                                    </div>
+                                    <div class="goods-info-bottom cf">
+                                        <div class="goods-info-chkbox">
+                                            <input type="checkbox" name="order_info_1" id="order_info_1" value="1">
+                                            <label for="order_info_1"></label>
+                                        </div>
+                                        <div class="goods-info-price">23,000원</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="goods-info-top">
+                                        <div class="goods-info-content">
+                                            <div class="goods-info-img">
+                                                <img src="assets/img/img_주문내역썸네일.png" alt="주문내역이미지">
+                                            </div>
+                                            <div class="goods-info-txt">
+                                                <div class="goods-info-category">렌트/액티비티</div>
+                                                <div class="goods-info-tit">우도씽씽이</div>
+                                            </div>
+                                        </div>
+                                        <div class="goods-info-option cf">
+                                            <div class="option-tit">성인</div>
+                                            <div class="option-ea">2매</div>
+                                            <div class="option-price">10,000원</div>
+                                        </div>
+                                        <div class="goods-info-option cf">
+                                            <div class="option-tit">청소년</div>
+                                            <div class="option-ea">1매</div>
+                                            <div class="option-price">8,000원</div>
+                                        </div>
+                                        <div class="goods-info-option cf">
+                                            <div class="option-tit">소인</div>
+                                            <div class="option-ea">3매</div>
+                                            <div class="option-price">5,000원</div>
+                                        </div>
+                                    </div>
+                                    <div class="goods-info-bottom cf">
+                                        <div class="goods-info-chkbox">
+                                            <input type="checkbox" name="order_info_2" id="order_info_2" value="2" disabled>
+                                            <label for="order_info_2"></label>
+                                        </div>
+                                        <div class="goods-info-price">23,000원</div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="order-goods-total cf">
+                                <div class="goods-total-left">총 주문금액</div>
+                                <div class="goods-total-right">40,000원</div>
+                            </div>
+                        </article>
+                        
+                        <!-- 주문내역 상세 주문정보 -->
+                        <article class="order-order-area">
+                            <div class="order-order-tit">주문/결제 금액 정보</div>
+                            <div class="order-order-info">
+                                <div class="order-info-tit">주문금액</div>
+                                <div class="order-info-con">
+                                    <div class="con-tit">상품금액</div>
+                                    <div class="con-price">40,000원</div>
+                                </div>
+                            </div>
+                            <div class="order-order-info">
+                                <div class="order-info-tit">결제상세</div>
+                                <div class="order-info-con">
+                                    <div class="con-tit">신용카드 결제<br>현재 | 일시불</div>
+                                    <div class="con-price">39,800원</div>
+                                </div>
+                            </div>
+                            <button type="button" class="order-order-btn" onclick="location.href='order-list.html'">확인</button>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            <!-- //content -->
+            
+            <!-- layer -->
+            <div class="layer-wrap" id="alert-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn confirm-btn">확인</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layer-wrap" id="confirm-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn half-btn confirm-btn">확인</button>
+                        <button type="button" class="layer-btn half-btn close-btn" onclick="closeLayer(this);">취소</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 주문취소 -->
+            <div class="layer-wrap" id="order-cancel-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <!-- 레이어 상단 버튼 -->
+                    <div class="layer-topbtn-area">
+                        <button type="button" class="layer-left-btn layer-img-btn" onclick="closeLayer(this);"><img src="assets/img/btn_del.png" alt="레이어닫기"></button>
+                    </div>
+                    <!-- 레이어 제목 -->
+                    <div class="layer-title">주문취소</div>
+                    <!-- 레이어 내용 -->
+                    <div class="layer-content">
+                        <!-- 레이어 주문취소 텍스트 -->
+                        <div class="layer-cancel-txt">해당 상품의 주문을 취소하시겠습니까?</div>
+                        <!-- 레이어 주문취소 상품 -->
+                        <ul class="order-goods-info cf">
+                            <li>
+                                <div class="goods-info-top">
+                                    <div class="goods-info-content">
+                                        <div class="goods-info-img">
+                                            <img src="assets/img/img_주문내역썸네일.png" alt="주문내역이미지">
+                                        </div>
+                                        <div class="goods-info-txt">
+                                            <div class="goods-info-category">렌트/액티비티</div>
+                                            <div class="goods-info-tit">우도씽씽이</div>
+                                        </div>
+                                    </div>
+                                    <div class="goods-info-option cf">
+                                        <div class="option-tit">성인</div>
+                                        <div class="option-ea">2매</div>
+                                        <div class="option-price">10,000원</div>
+                                    </div>
+                                    <div class="goods-info-option cf">
+                                        <div class="option-tit">청소년</div>
+                                        <div class="option-ea">1매</div>
+                                        <div class="option-price">8,000원</div>
+                                    </div>
+                                    <div class="goods-info-option cf">
+                                        <div class="option-tit">소인</div>
+                                        <div class="option-ea">3매</div>
+                                        <div class="option-price">5,000원</div>
+                                    </div>
+                                </div>
+                                <div class="goods-info-bottom cf">
+                                    <div class="goods-info-left">총 상품금액</div>
+                                    <div class="goods-info-right">23,000원</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods-info-top">
+                                    <div class="goods-info-content">
+                                        <div class="goods-info-img">
+                                            <img src="assets/img/img_주문내역썸네일.png" alt="주문내역이미지">
+                                        </div>
+                                        <div class="goods-info-txt">
+                                            <div class="goods-info-category">렌트/액티비티</div>
+                                            <div class="goods-info-tit">우도씽씽이</div>
+                                        </div>
+                                    </div>
+                                    <div class="goods-info-option cf">
+                                        <div class="option-tit">성인</div>
+                                        <div class="option-ea">2매</div>
+                                        <div class="option-price">10,000원</div>
+                                    </div>
+                                    <div class="goods-info-option cf">
+                                        <div class="option-tit">청소년</div>
+                                        <div class="option-ea">1매</div>
+                                        <div class="option-price">8,000원</div>
+                                    </div>
+                                    <div class="goods-info-option cf">
+                                        <div class="option-tit">소인</div>
+                                        <div class="option-ea">3매</div>
+                                        <div class="option-price">5,000원</div>
+                                    </div>
+                                </div>
+                                <div class="goods-info-bottom cf">
+                                    <div class="goods-info-left">총 상품금액</div>
+                                    <div class="goods-info-right">23,000원</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 레이어 주문취소 사유 -->
+                        <div class="layer-input-area">
+                            <select name="cancel_reason" id="cancel_reason" class="w100" onchange="setCancelReason(this);">
+                                <option value="">주문 취소 사유를 선택해주세요.</option>
+                                <option value="구매의사 취소">구매의사 취소</option>
+                                <option value="다른 상품 잘못 주문">다른 상품 잘못 주문</option>
+                                <option value="서비스 불만족">서비스 불만족</option>
+                                <option value="여행취소">여행취소</option>
+                                <option value="기타 (직접입력)">기타 (직접입력)</option>
+                            </select>
+                        </div>
+                        <div class="layer-input-area">
+                            <textarea name="cancel_content" id="cancel_content" class="w100" rows="10" placeholder="주문 취소 사유를 입력해주세요." disabled></textarea>
+                        </div>
+                        <!-- 레이어 주문취소 버튼 -->
+                        <div class="layer-cancel-btn-area">
+                            <button type="button" class="layer-cancel-btn" onclick="closeLayer(this);">취소</button>
+                            <button type="button" class="layer-cancel-btn" onclick="">주문취소하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //layer -->
+		</div>
+	</body>
+</html>

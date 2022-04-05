@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:url" content="">
+        <meta property="og:title" content="우도다">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="assets/img/logo-favicon.ico">
+        <meta property="og:description" content="우도다">
+		<title>우도다</title>
+		<meta name="description" content="우도다">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<link rel="shortcut icon" href="assets/img/logo-favicon.ico">
+		<link rel="apple-touch-icon" href="assets/img/logo-favicon.ico">
+		
+		<link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/font.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/elisyam-1.5.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/swiper.min.css" type="text/css" rel="stylesheet">
+		<link href="assets/css/common.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/mobile-main.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+		<script src="assets/js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="assets/js/jquery-migrate-1.4.1.min.js"></script>
+        <script src="assets/vendors/js/base/core.js"></script>
+        <script src="assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+        <script src="assets/vendors/js/app/app.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment-with-locales.js"></script>
+        <script src="assets/vendors/js/datepicker/daterangepicker.js"></script>
+        <script src="assets/js/components/datepicker/daterangepicker.js"></script>
+		<script src="assets/js/swiper.min.js"></script>
+        <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7c27b395b09309e57fc0371fe6668b50&libraries=services,clusterer" type="text/javascript"></script>
+        <script src="assets/js/mobile-map.js"></script>
+        <script src="assets/js/mobile-main.js"></script>
+	</head>
+
+	<body>
+		<div class="m-wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not-view">header</h1>
+                
+                <div class="header-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="로고"></a>
+                </div>
+                
+                <div class="header-menu">
+                    <div class="menu-btn"><img src="assets/img/btn_menu.png" alt="메뉴"></div>
+                    
+                    <div class="menu-area">
+                        <div class="menu-mask"></div>
+                        <div class="menu-box">
+                            <div class="menu-box-btn"><img src="assets/img/close_white.png" alt="메뉴닫기"></div>
+                            <ul class="menu-box-top cf">
+                                <li><a href="login-index.html">로그인</a></li>
+                                <li><a href="join-email.html">회원가입</a></li>
+                            </ul>
+                            <div class="menu-box-content">
+                                <ul class="menu-box-list cf">
+                                    <li><a href="notice-list.html">공지사항</a></li>
+                                    <li><a href="faq-list.html">고객센터</a></li>
+                                    <li><a href="order-list.html">주문내역 <span>(9개)</span></a></li>
+                                    <li><a href="voucher-list.html">나의바우처 <span>(15개)</span></a></li>
+                                    <li><a href="inquiry-list.html">상품문의 <span>(0개)</span></a></li>
+                                    <li><a href="setting.html">설정</a></li>
+                                </ul>
+                                <!-- footer -->
+                                <footer class="footer">
+                                    <h1 class="not-view">footer</h1>
+
+                                    <ul class="footer-link-list cf">
+                                        <li><a href="agreement.html">서비스이용약관</a></li>
+                                        <li><a href="policy.html">개인정보처리방침</a></li>
+                                    </ul>
+                                    <div class="footer-info">
+                                        제이아이엔 시스템 (주) 대표 김병석<br>사업자등록번호 353-81-01256<br>통신판매업신고번호<br>제주특별자치도 제주시 첨단로 199 MJ벤처오름 212호<br>문의 064-722-0442<br>고객센터 cs@jin-system.kr
+                                    </div>
+                                </footer>
+                            </div>
+                            <!-- //footer -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header-search">
+                    <a href="search.html"><img src="assets/img/btn_search.png" alt="검색"></a>
+                </div>
+            </header>
+            <!-- //header -->
+            
+            <!-- nav -->
+            <nav class="nav">
+                <h1 class="not-view">nav</h1>
+                
+                <ul class="nav-list cf">
+                    <li class="nav-attraction">
+                        <a href="attraction-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">우도여행지</div>
+                        </a>
+                    </li>
+                    <li class="nav-activity on">
+                        <a href="activity-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">렌트·숙박<br>액티비티</div>
+                        </a>
+                    </li>
+                    <li class="nav-magazine">
+                        <a href="magazine-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">매거진</div>
+                        </a>
+                    </li>
+                    <li class="nav-tourcart">
+                        <a href="tourcart.html">
+                            <div class="nav-img"><span class="nav-cnt" id="tourcart-cnt">0</span></div>
+                            <div class="nav-tit">여행카트</div>
+                        </a>
+                    </li>
+                    <li class="nav-buycart">
+                        <a href="buycart.html">
+                            <div class="nav-img"><span class="nav-cnt" id="buycart-cnt">00</span></div>
+                            <div class="nav-tit">구매카트</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+			
+			<!-- content -->
+            <div class="c-wrap">
+                <!-- 상세 페이지 -->
+                <section class="c-detail">
+                    <!-- 페이지 상단바 -->
+                    <div class="c-topbar-area">
+                        <div class="c-topbar-left">
+                            <a href="javascript:history.back();"><img src="assets/img/btn_previous.png" alt="뒤로가기"></a>
+                        </div>
+                        
+                        <div class="c-topbar-right">
+                            <a href="https://map.kakao.com/link/search/올레스쿠터" target="_blank"><img src="assets/img/icon_map.png" alt="지도보기"></a>
+                            <a href="javascript:void(0);" onclick="openShareLayer();"><img src="assets/img/icon_share.png" alt="공유하기"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-area">
+                        <!-- 상세 제목 -->
+                        <article class="detail-tit">올레스쿠터</article>
+
+                        <!-- 상세 이미지 -->
+                        <article class="detail-img">
+                            <div class="swiper-container gallery-slide">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><img src="assets/img/하고수동해변01.png" alt="상세큰이미지"></li>
+                                    <li class="swiper-slide"><img src="assets/img/하고수동해변02.png" alt="상세큰이미지"></li>
+                                    <li class="swiper-slide"><img src="assets/img/하고수동해변03.png" alt="상세큰이미지"></li>
+                                    <li class="swiper-slide"><img src="assets/img/하고수동해변04.png" alt="상세큰이미지"></li>
+                                    <li class="swiper-slide"><img src="assets/img/하고수동해변05.png" alt="상세큰이미지"></li>
+                                </ul>
+                                <div class="gallery-slide-pagination"></div>
+                            </div>
+                            <div class="swiper-container thumbnail-slide">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide"><img src="assets/img/하고수동해변01.png" alt="상세작은이미지"></li>
+                                    <li class="swiper-slide"><img src="assets/img/하고수동해변02.png" alt="상세작은이미지"></li>
+                                    <li class="swiper-slide"><img src="assets/img/하고수동해변03.png" alt="상세작은이미지"></li>
+                                    <li class="swiper-slide"><img src="assets/img/하고수동해변04.png" alt="상세작은이미지"></li>
+                                    <li class="swiper-slide"><img src="assets/img/하고수동해변05.png" alt="상세작은이미지"></li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <!-- 상세 정보 -->
+                        <article class="detail-info">
+                            <table class="c-table">
+                                <colgroup>
+                                    <col width="25%">
+                                    <col width="75%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>주소</th>
+                                        <td>제주시 우면도 연평리 123</td>
+                                    </tr>
+                                    <tr>
+                                        <th>운영(영업)시간</th>
+                                        <td>10:00 ~ 17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <th>휴무일</th>
+                                        <td>없음</td>
+                                    </tr>
+                                    <tr>
+                                        <th>문의안내</th>
+                                        <td>제주관광정보센터 064-740-6000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </div>
+                    
+                    <!-- 탭 -->
+                    <div class="c-tab">
+                        <div class="c-tab-item">
+                            <a href="javascript:void(0);" data-tab="detailinfo" onclick="setContentTab(this);">상세정보</a>
+                        </div>
+                        <div class="c-tab-item">
+                            <a href="javascript:void(0);" data-tab="userreview" onclick="setContentTab(this);">사용자리뷰</a>
+                        </div>
+                        <div class="c-tab-item">
+                            <a href="javascript:void(0);" data-tab="productinquiry" onclick="setContentTab(this);">상품문의</a>
+                        </div>
+                    </div>
+                    
+                    <!-- 탭에 따라 c-tab-info 클래스 태그 안의 내용이 변경됨 -->
+                    <div class="c-tab-info" id="c-tab-detailinfo">
+                        <!-- 상세정보 -->
+                        <article class="detailinfo-con">
+                            <img src="assets/img/우도봉.png" alt="상세정보이미지">
+                            <p>70여 세 해녀를 모티브로 한 해녀상이 중앙에 있어 눈길을 끈다. 여름밤에는 고기잡이 선박들이 밝힌 불빛들이 찬란하다. 70여 세 해녀를 모티브로 한 해녀상이 중앙에 있어 눈길을 끈다. 여름밤에는 고기잡이 선박들이 밝힌 불빛들이 찬란하다.</p>
+                        </article>
+                    </div>
+                    
+                    <!-- 탭에 따라 c-tab-info 클래스 태그 안의 내용이 변경됨 -->
+                    <div class="c-tab-info" id="c-tab-userreview">
+                        <div class="review-tit">
+                            <div class="c-tit">리뷰작성</div>
+                            <a href="javascript:void(0);" class="review-add-btn" onclick="openReviewAddLayer();"><img src="assets/img/icon_write_review.png" alt="리뷰작성"></a>
+                        </div>
+                        
+                        <ul class="review-order cf">
+                            <li>
+                                <a href="javascript:void(0);" data-review-order="latest" onclick="setUserReviewOrder(this);">최신순</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" data-review-order="popular" onclick="setUserReviewOrder(this);">인기순</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="not-pointer">방문시기</a>
+                                <select name="review_order_date" id="review_order_date" onchange="">
+                                    <option value="">전체</option>
+                                    <option value="1">1월</option>
+                                    <option value="2">2월</option>
+                                    <option value="3">3월</option>
+                                    <option value="4">4월</option>
+                                    <option value="5">5월</option>
+                                    <option value="6">6월</option>
+                                    <option value="7">7월</option>
+                                    <option value="8">8월</option>
+                                    <option value="9">9월</option>
+                                    <option value="10">10월</option>
+                                    <option value="11">11월</option>
+                                    <option value="12">12월</option>
+                                </select>
+                            </li>
+                        </ul>
+                        
+                        <!-- 정렬에 따라 review-info 클래스 태그 안의 내용이 변경됨 -->
+                        <article class="review-info">
+                            <!-- 리뷰가 없을 경우 -->
+                            <div class="empty">작성된 리뷰가 없습니다.<br>첫 리뷰의 주인공이 되어보세요!</div>
+                            <!-- 리뷰가 있을 경우 -->
+                            <ul class="review-info-list cf">
+                                <li>
+                                    <div class="review-info-img">
+                                        <img src="assets/img/우도봉.png" alt="리뷰이미지">
+                                    </div>
+                                    <div class="review-info-txt">
+                                        <div class="review-info-star">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                        </div>
+                                        <div class="review-info-tit"><a href="javascript:void(0);" class="layer-open-btn" data-review-idx="1" onclick="openReviewDetailLayer(this);">바람이 그리운 날에 우도봉과 바람의 언덕</a></div>
+                                        <div class="review-info-etc">
+                                            <div class="review-info-etc-item review-info-date">2021.10.11</div>
+                                            <div class="review-info-etc-item">프로여행러</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="review-info-img">
+                                        <img src="assets/img/우도봉.png" alt="리뷰이미지">
+                                    </div>
+                                    <div class="review-info-txt">
+                                        <div class="review-info-star">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                        </div>
+                                        <div class="review-info-tit"><a href="javascript:void(0);" class="layer-open-btn" data-review-idx="1" onclick="openReviewDetailLayer(this);">바람이 그리운 날에 우도봉과 바람의 언덕</a></div>
+                                        <div class="review-info-etc">
+                                            <div class="review-info-etc-item review-info-date">2021.10.11</div>
+                                            <div class="review-info-etc-item">프로여행러</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="review-info-img">
+                                        <img src="assets/img/우도봉.png" alt="리뷰이미지">
+                                    </div>
+                                    <div class="review-info-txt">
+                                        <div class="review-info-star">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                        </div>
+                                        <div class="review-info-tit"><a href="javascript:void(0);" class="layer-open-btn" data-review-idx="1" onclick="openReviewDetailLayer(this);">바람이 그리운 날에 우도봉과 바람의 언덕</a></div>
+                                        <div class="review-info-etc">
+                                            <div class="review-info-etc-item review-info-date">2021.10.11</div>
+                                            <div class="review-info-etc-item">프로여행러</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="review-info-img">
+                                        <img src="assets/img/우도봉.png" alt="리뷰이미지">
+                                    </div>
+                                    <div class="review-info-txt">
+                                        <div class="review-info-star">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                            <img src="assets/img/icon_rate.png" alt="별점">
+                                        </div>
+                                        <div class="review-info-tit"><a href="javascript:void(0);" class="layer-open-btn" data-review-idx="1" onclick="openReviewDetailLayer(this);">바람이 그리운 날에 우도봉과 바람의 언덕</a></div>
+                                        <div class="review-info-etc">
+                                            <div class="review-info-etc-item review-info-date">2021.10.11</div>
+                                            <div class="review-info-etc-item">프로여행러</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- 리스트 페이징 -->
+                            <div class="c-pagination-area">
+                                <ul class="cf">
+                                    <li><a href="#" class="pagination-page disabled">&lt;</a></li>
+                                    <li><a href="#" class="pagination-page on">1</a></li>
+                                    <li><a href="#" class="pagination-page">2</a></li>
+                                    <li><a href="#" class="pagination-page">3</a></li>
+                                    <li><a href="#" class="pagination-page">4</a></li>
+                                    <li><a href="#" class="pagination-page">5</a></li>
+                                    <li><a href="#" class="pagination-page">&gt;</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- 탭에 따라 c-tab-info 클래스 태그 안의 내용이 변경됨 -->
+                    <div class="c-tab-info" id="c-tab-productinquiry">
+                        <div class="inquiry-tit">
+                            <!--<a href="inquiry-write.html" class="inquiry-add-btn"><img src="assets/img/icon_write_review.png" alt="문의작성"></a>-->
+                            <a href="javascript:void(0);" class="inquiry-add-btn layer-open-btn" onclick="openInquiryAddLayer();"><img src="assets/img/icon_write_review.png" alt="문의작성"></a>
+                        </div>
+                        
+                        <div class="inquiry-txt">판매자에게 상품에 관해 궁금하신 점이 있나요?<br>문의 내용을 게시판에 적어 주시면<br>빠르게 답변을 해 드리겠습니다.</div>
+                        
+                        <div class="inquiry-condition cf">
+                            <div class="inquiry-condition-secret">
+                                <input type="checkbox" name="inquiry_condition_secret" id="inquiry_condition_secret" value="Y">
+                                <label for="inquiry_condition_secret">비밀글 제외</label>
+                            </div>
+                            <div class="inquiry-condition-category">
+                                <select name="inquiry_condition_category" id="inquiry_condition_category" onchange="">
+                                    <option value="">문의유형</option>
+                                    <option value="상품">상품</option>
+                                    <option value="취소/환불">취소/환불</option>
+                                    <option value="변경">변경</option>
+                                    <option value="기타">기타</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <!-- 문의조건에 따라 inquiry-info 클래스 태그 안의 내용이 변경됨 -->
+                        <article class="inquiry-info">
+                            <!-- 문의가 없을 경우 -->
+                            <div class="empty">상품문의가 없습니다.</div>
+                            <!-- 문의가 있을 경우 -->
+                            <dl class="inquiry-info-list">
+                                <dt>
+                                    <div class="category">취소/환불</div>
+                                    <div class="question">일정변경으로 취소했습니다. 확인부탁드려요.</div>
+                                </dt>
+                                <dd>
+                                    <div class="answer">처리 되었습니다.</div>
+                                </dd>
+                                <dt>
+                                    <div class="category">상품</div>
+                                    <div class="question">면허 없이 전기자전거를 탈 수 있나요?</div>
+                                </dt>
+                                <dd>
+                                    <div class="answer">전기자전거는 면허 업이 탑승이 가능하십니다.</div>
+                                </dd>
+                                <dt>
+                                    <div class="category">상품</div>
+                                    <div class="question">비밀글입니다.</div>
+                                </dt>
+                                <dd>
+                                    <div class="answer">답변완료.</div>
+                                </dd>
+                            </dl>
+                            <!-- 리스트 페이징 -->
+                            <div class="c-pagination-area">
+                                <ul class="cf">
+                                    <li><a href="#" class="pagination-page disabled">&lt;</a></li>
+                                    <li><a href="#" class="pagination-page on">1</a></li>
+                                    <li><a href="#" class="pagination-page">2</a></li>
+                                    <li><a href="#" class="pagination-page">3</a></li>
+                                    <li><a href="#" class="pagination-page">4</a></li>
+                                    <li><a href="#" class="pagination-page">5</a></li>
+                                    <li><a href="#" class="pagination-page">&gt;</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <!-- 상세 버튼 -->
+                    <div class="detail-btn-fix">
+                        <!-- 옵션 선택창 -->
+                        <div class="detail-option-area">
+                            <div class="detail-option-btn"></div>
+                            
+                            <div class="detail-option-content">
+                                <div class="detail-option-info">
+                                    <div class="option-info-txt">옵션을 선택해 주세요.</div>
+                                    <div class="option-info-select">
+                                        <select name="option_select" id="option_select" onchange="">
+                                            <option value="">옵션선택</option>
+                                            <option value="1시간권|13000">1시간권 13,000원</option>
+                                            <option value="3시간권|25000">3시간권 25,000원</option>
+                                            <option value="종일권|35000">종일권 35,000원</option>
+                                        </select>
+                                    </div>
+                                    <ul class="option-info-list cf">
+                                        <li>
+                                            <div class="option-info-top cf">
+                                                <div class="option-info-tit">3시간권</div>
+                                                <a href="javascript:void(0);" class="option-info-del-btn" onclick=""><img src="assets/img/btn_del.png" alt="옵션삭제"></a>
+                                            </div>
+                                            <div class="option-info-bottom cf">
+                                                <div class="c-ea option-info-ea cf">
+                                                    <button type="button" class="c-ea-plus" onclick="setContentEa(this,'+');"><img src="assets/img/btn_plus.png" alt="수량더하기"></button>
+                                                    <input type="text" name="option_ea_1" id="option_ea_1" class="c-ea-input" value="2" readonly>
+                                                    <button type="button" class="c-ea-minus" onclick="setContentEa(this,'-');"><img src="assets/img/btn_minus.png" alt="수량빼기"></button>
+                                                </div>
+                                                <div class="option-info-price">
+                                                    <span id="option-info-price-1" class="option-info-price-num">50,000</span>원
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="option-info-top cf">
+                                                <div class="option-info-tit">종일권</div>
+                                                <a href="javascript:void(0);" class="option-info-del-btn" onclick=""><img src="assets/img/btn_del.png" alt="옵션삭제"></a>
+                                            </div>
+                                            <div class="option-info-bottom cf">
+                                                <div class="c-ea option-info-ea cf">
+                                                    <button type="button" class="c-ea-plus" onclick="setContentEa(this,'+');"><img src="assets/img/btn_plus.png" alt="수량더하기"></button>
+                                                    <input type="text" name="option_ea_2" id="option_ea_2" class="c-ea-input" value="2" readonly>
+                                                    <button type="button" class="c-ea-minus" onclick="setContentEa(this,'-');"><img src="assets/img/btn_minus.png" alt="수량빼기"></button>
+                                                </div>
+                                                <div class="option-info-price">
+                                                    <span id="option-info-price-2" class="option-info-price-num">70,000</span>원
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="detail-option-total cf">
+                                    <div class="option-total-left">TOTAL</div>
+                                    <div class="option-total-right"><span id="option-total-price">125,000</span>원</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-btn-area">
+                            <button type="button" class="detail-btn" onclick=""><img src="assets/img/icon_save.png" alt="카트담기">구매카트에 담기</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- //content -->
+            
+            <!-- layer -->
+            <div class="layer-wrap" id="alert-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn confirm-btn">확인</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layer-wrap" id="confirm-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn half-btn confirm-btn">확인</button>
+                        <button type="button" class="layer-btn half-btn close-btn" onclick="closeLayer(this);">취소</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 사용자리뷰 작성 -->
+            <div class="layer-wrap" id="review-add-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <!-- 레이어 상단 버튼 -->
+                    <div class="layer-topbtn-area">
+                        <button type="button" class="layer-left-btn layer-img-btn" onclick="closeLayer(this);"><img src="assets/img/btn_del.png" alt="레이어닫기"></button>
+                        <button type="button" class="layer-right-btn layer-txt-btn" onclick="">완료</button>
+                    </div>
+                    <!-- 레이어 제목 -->
+                    <div class="layer-title">우도봉</div>
+                    <!-- 레이어 내용 -->
+                    <div class="layer-content">
+                        <!-- 레이어 리뷰 설명 -->
+                        <div class="layer-review-explain">
+                            <div class="tit">리뷰쓰기</div>
+                            <div class="con">해당 여행지를 방문하셨다면, 여행지에서의 추억을 공유해주세요.<br>여러분의 소중한 경험이 다른 여행자들의 여행계획에 큰 도움을 줄 수 있습니다.</div>
+                        </div>
+                        <!-- 레이어 리뷰 작성 -->
+                        <div class="layer-input-area">
+                            <div class="tit">별점주기</div>
+                            <div class="con">
+                                <input type="hidden" name="review_star_cnt" id="review_star_cnt" value="5">
+                                <div class="review-star-input">
+                                    <img src="assets/img/icon_rate.png" alt="별점" class="review-star-item" onclick="setReviewStar('1');">
+                                    <img src="assets/img/icon_rate.png" alt="별점" class="review-star-item" onclick="setReviewStar('2');">
+                                    <img src="assets/img/icon_rate.png" alt="별점" class="review-star-item" onclick="setReviewStar('3');">
+                                    <img src="assets/img/icon_rate.png" alt="별점" class="review-star-item" onclick="setReviewStar('4');">
+                                    <img src="assets/img/icon_rate.png" alt="별점" class="review-star-item" onclick="setReviewStar('5');">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layer-input-area">
+                            <div class="tit">방문시기</div>
+                            <div class="con">
+                                <div class="review-date-input">
+                                    <select name="review_date_year" id="review_date_year">
+                                        <option value="2010">2010년</option>
+                                        <option value="2011">2011년</option>
+                                        <option value="2012">2012년</option>
+                                        <option value="2013">2013년</option>
+                                        <option value="2014">2014년</option>
+                                        <option value="2015">2015년</option>
+                                        <option value="2016">2016년</option>
+                                        <option value="2017">2017년</option>
+                                        <option value="2018">2018년</option>
+                                        <option value="2019">2019년</option>
+                                        <option value="2020">2020년</option>
+                                        <option value="2021">2021년</option>
+                                    </select>
+                                    <select name="review_date_month" id="review_date_month">
+                                        <option value="1">1월</option>
+                                        <option value="2">2월</option>
+                                        <option value="3">3월</option>
+                                        <option value="4">4월</option>
+                                        <option value="5">5월</option>
+                                        <option value="6">6월</option>
+                                        <option value="7">7월</option>
+                                        <option value="8">8월</option>
+                                        <option value="9">9월</option>
+                                        <option value="10">10월</option>
+                                        <option value="11">11월</option>
+                                        <option value="12">12월</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layer-input-area">
+                            <div class="review-img-input">
+                                <div class="review-img-preview">
+                                    <img src="assets/img/no_image.png" alt="리뷰썸네일">
+                                </div>
+                                <div class="review-img-btn">
+                                    <input type="file" name="review_img" id="review_img" accept="image/*">
+                                    <label for="review_img">썸네일 올리기</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layer-input-area">
+                            <input type="text" name="review_title" id="review_title" class="w100" maxlength="50" placeholder="리뷰제목을 적어주세요. (50자 이내)">
+                        </div>
+                        <div class="layer-input-area">
+                            <textarea name="review_content" id="review_content" class="w100" rows="10">스마트 에디터가 들어갑니다.</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 사용자리뷰 상세 -->
+            <div class="layer-wrap layer-all-wrap" id="review-detail-layer">
+                <button type="button" class="layer-hidden-btn" onclick="closeLayer(this);">닫기</button>
+                <div class="layer-box">
+                    <!-- 레이어 제목 -->
+                    <div class="layer-title">
+                        <button type="button" class="layer-left-btn layer-img-btn layer-close-btn" onclick="closeLayer(this);"><img src="assets/img/btn_previous.png" alt="레이어닫기"></button>
+                        <div class="layer-title-txt">우도봉</div>
+                    </div>
+                    <!-- 레이어 내용 -->
+                    <div class="layer-content">
+                        <!-- 레이어 리뷰 프로필 -->
+                        <div class="layer-review-profile">
+                            <div class="img"><img src="assets/img/img_profile.png" alt="프로필이미지"></div>
+                            <div class="txt">프로여행러<span>방문시기 2021년 10월</span></div>
+                        </div>
+                        <!-- 레이어 리뷰 내용 -->
+                        <div class="layer-review-content">
+                            <div class="review-star">
+                                <img src="assets/img/icon_rate.png" alt="별점">
+                                <img src="assets/img/icon_rate.png" alt="별점">
+                                <img src="assets/img/icon_rate.png" alt="별점">
+                                <img src="assets/img/icon_rate.png" alt="별점">
+                                <img src="assets/img/icon_rate.png" alt="별점">
+                            </div>
+                            <div class="review-tit">바람이 그리운 날에 우도봉과 바람의 언덕</div>
+                            <div class="review-con">내용이 들어갑니다.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 상품문의 작성 -->
+            <div class="layer-wrap layer-all-wrap" id="inquiry-add-layer">
+                <button type="button" class="layer-hidden-btn" onclick="closeLayer(this);">닫기</button>
+                <div class="layer-box">
+                    <!-- 레이어 하단 버튼 -->
+                    <div class="layer-bottombtn-area">
+                        <button type="button" class="layer-txt-btn" onclick="">완료</button>
+                    </div>
+                    <!-- 레이어 제목 -->
+                    <div class="layer-title">
+                        <button type="button" class="layer-left-btn layer-img-btn layer-close-btn" onclick="closeLayer(this);"><img src="assets/img/btn_previous.png" alt="레이어닫기"></button>
+                        <div class="layer-title-txt">상품문의</div>
+                    </div>
+                    <!-- 레이어 내용 -->
+                    <div class="layer-content">
+                        <!-- 문의 유형 -->
+                        <div class="layer-inquiry-item">
+                            <div class="txt-indent">1. 문의 유형을 선택해 주세요.</div>
+                            <ul class="layer-inquiry-category cf">
+                                <li>
+                                    <input type="radio" name="inquiry_category" id="inquiry_category_goods" value="goods">
+                                    <label for="inquiry_category_goods">상품</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="inquiry_category" id="inquiry_category_cancel" value="cancel">
+                                    <label for="inquiry_category_cancel">취소/환불</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="inquiry_category" id="inquiry_category_change" value="change">
+                                    <label for="inquiry_category_change">변경</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="inquiry_category" id="inquiry_category_etc" value="etc">
+                                    <label for="inquiry_category_etc">기타</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 문의 내용 -->
+                        <div class="layer-inquiry-item">
+                            <div class="txt-indent">2. 문의 내용을 적어주세요.</div>
+                            <textarea name="inquiry_content" id="inquiry_content" class="w100" rows="10"></textarea>
+                            <input type="checkbox" name="inquiry_secret" id="inquiry_secret" value="Y">
+                            <label for="inquiry_secret">비밀글로 문의하기</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 공유하기 -->
+            <div class="layer-wrap" id="share-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <!-- 레이어 상단 버튼 -->
+                    <div class="layer-topbtn-area">
+                        <div class="layer-left-btn layer-txt-btn">공유하기</div>
+                        <button type="button" class="layer-right-btn layer-img-btn" onclick="closeLayer(this);"><img src="assets/img/icon_close_pop.png" alt="레이어닫기"></button>
+                    </div>
+                    <!-- 레이어 내용 -->
+                    <div class="layer-content">
+                        <!-- 레이어 공유하기 버튼 리스트 -->
+                        <ul class="layer-share-list cf">
+                            <li>
+                                <a href="javascript:void(0);" onclick="">
+                                    <div class="layer-share-img"><img src="assets/img/icon_kakao.png" alt="카카오톡공유하기"></div>
+                                    <div class="layer-share-txt">카카오톡으로 보내기</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" onclick="">
+                                    <div class="layer-share-img"><img src="assets/img/icon_link.png" alt="링크공유하기"></div>
+                                    <div class="layer-share-txt">링크 복사하기</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //layer -->
+		</div>
+	</body>
+</html>

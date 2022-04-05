@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:url" content="">
+        <meta property="og:title" content="우도다">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="assets/img/logo-favicon.ico">
+        <meta property="og:description" content="우도다">
+		<title>우도다</title>
+		<meta name="description" content="우도다">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<link rel="shortcut icon" href="assets/img/logo-favicon.ico">
+		<link rel="apple-touch-icon" href="assets/img/logo-favicon.ico">
+		
+		<link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/font.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/elisyam-1.5.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/swiper.min.css" type="text/css" rel="stylesheet">
+		<link href="assets/css/common.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/mobile-main.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+		<script src="assets/js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="assets/js/jquery-migrate-1.4.1.min.js"></script>
+        <script src="assets/vendors/js/base/core.js"></script>
+        <script src="assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+        <script src="assets/vendors/js/app/app.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment-with-locales.js"></script>
+        <script src="assets/vendors/js/datepicker/daterangepicker.js"></script>
+        <script src="assets/js/components/datepicker/daterangepicker.js"></script>
+		<script src="assets/js/swiper.min.js"></script>
+        <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7c27b395b09309e57fc0371fe6668b50&libraries=services,clusterer" type="text/javascript"></script>
+        <script src="assets/js/mobile-map.js"></script>
+        <script src="assets/js/mobile-main.js"></script>
+	</head>
+
+	<body>
+		<div class="m-wrap">
+			<!-- content -->
+            <div class="c-wrap c-member-wrap">
+                <!-- 로그인 페이지 -->
+                <section class="c-login">
+                    <!-- 로그인 상단 -->
+                    <article class="login-top-area">
+                        <a href="index.html">둘러보기</a>
+                    </article>
+                    
+                    <!-- 로그인 제목 -->
+                    <article class="login-tit-area">
+                        <div class="login-img"><img src="assets/img/visual_only.png" alt="로그인이미지"></div>
+                        <div class="login-medium-txt">혼자옵서예</div>
+                        <div class="login-big-txt">우도다</div>
+                        <div class="login-small-txt">우도여행이 다 있다! 그래!</div>
+                    </article>
+                    
+                    <!-- 로그인 버튼 -->
+                    <article class="login-btn-area login-btn-box-area">
+                        <div class="login-btn-box">
+                            <ul class="login-btn-list cf">
+                                <li>
+                                    <button type="button" class="login-btn login-google-btn" onclick="location.href='index.html';">구글계정으로 빠른 시작</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="login-btn" onclick="location.href='login-index.html';">다른 계정으로 로그인</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="login-btn login-join-btn" onclick="location.href='join-email.html';">회원가입</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <!-- //content -->
+            
+            <!-- layer -->
+            <div class="layer-wrap" id="alert-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn confirm-btn">확인</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layer-wrap" id="confirm-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn half-btn confirm-btn">확인</button>
+                        <button type="button" class="layer-btn half-btn close-btn" onclick="closeLayer(this);">취소</button>
+                    </div>
+                </div>
+            </div>
+            <!-- //layer -->
+		</div>
+	</body>
+</html>

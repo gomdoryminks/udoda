@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:url" content="">
+        <meta property="og:title" content="우도다">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="assets/img/logo-favicon.ico">
+        <meta property="og:description" content="우도다">
+		<title>우도다</title>
+		<meta name="description" content="우도다">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<link rel="shortcut icon" href="assets/img/logo-favicon.ico">
+		<link rel="apple-touch-icon" href="assets/img/logo-favicon.ico">
+		
+		<link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/font.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/elisyam-1.5.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/swiper.min.css" type="text/css" rel="stylesheet">
+		<link href="assets/css/common.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/mobile-main.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+		<script src="assets/js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="assets/js/jquery-migrate-1.4.1.min.js"></script>
+        <script src="assets/vendors/js/base/core.js"></script>
+        <script src="assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+        <script src="assets/vendors/js/app/app.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment-with-locales.js"></script>
+        <script src="assets/vendors/js/datepicker/daterangepicker.js"></script>
+        <script src="assets/js/components/datepicker/daterangepicker.js"></script>
+		<script src="assets/js/swiper.min.js"></script>
+        <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7c27b395b09309e57fc0371fe6668b50&libraries=services,clusterer" type="text/javascript"></script>
+        <script src="assets/js/mobile-map.js"></script>
+        <script src="assets/js/mobile-main.js"></script>
+	</head>
+
+	<body>
+		<div class="m-wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not-view">header</h1>
+                
+                <div class="header-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="로고"></a>
+                </div>
+                
+                <div class="header-menu">
+                    <div class="menu-btn"><img src="assets/img/btn_menu.png" alt="메뉴"></div>
+                    
+                    <div class="menu-area">
+                        <div class="menu-mask"></div>
+                        <div class="menu-box">
+                            <div class="menu-box-btn"><img src="assets/img/close_white.png" alt="메뉴닫기"></div>
+                            <ul class="menu-box-top cf">
+                                <li><a href="login-index.html">로그인</a></li>
+                                <li><a href="join-email.html">회원가입</a></li>
+                            </ul>
+                            <div class="menu-box-content">
+                                <ul class="menu-box-list cf">
+                                    <li><a href="notice-list.html">공지사항</a></li>
+                                    <li><a href="faq-list.html">고객센터</a></li>
+                                    <li><a href="order-list.html">주문내역 <span>(9개)</span></a></li>
+                                    <li><a href="voucher-list.html">나의바우처 <span>(15개)</span></a></li>
+                                    <li><a href="inquiry-list.html">상품문의 <span>(0개)</span></a></li>
+                                    <li><a href="setting.html">설정</a></li>
+                                </ul>
+                                <!-- footer -->
+                                <footer class="footer">
+                                    <h1 class="not-view">footer</h1>
+
+                                    <ul class="footer-link-list cf">
+                                        <li><a href="agreement.html">서비스이용약관</a></li>
+                                        <li><a href="policy.html">개인정보처리방침</a></li>
+                                    </ul>
+                                    <div class="footer-info">
+                                        제이아이엔 시스템 (주) 대표 김병석<br>사업자등록번호 353-81-01256<br>통신판매업신고번호<br>제주특별자치도 제주시 첨단로 199 MJ벤처오름 212호<br>문의 064-722-0442<br>고객센터 cs@jin-system.kr
+                                    </div>
+                                </footer>
+                            </div>
+                            <!-- //footer -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header-search">
+                    <a href="search.html"><img src="assets/img/btn_search.png" alt="검색"></a>
+                </div>
+            </header>
+            <!-- //header -->
+            
+            <!-- nav -->
+            <nav class="nav">
+                <h1 class="not-view">nav</h1>
+                
+                <ul class="nav-list cf">
+                    <li class="nav-attraction">
+                        <a href="attraction-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">우도여행지</div>
+                        </a>
+                    </li>
+                    <li class="nav-activity">
+                        <a href="activity-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">렌트·숙박<br>액티비티</div>
+                        </a>
+                    </li>
+                    <li class="nav-magazine">
+                        <a href="magazine-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">매거진</div>
+                        </a>
+                    </li>
+                    <li class="nav-tourcart">
+                        <a href="tourcart.html">
+                            <div class="nav-img"><span class="nav-cnt" id="tourcart-cnt">0</span></div>
+                            <div class="nav-tit">여행카트</div>
+                        </a>
+                    </li>
+                    <li class="nav-buycart">
+                        <a href="buycart.html">
+                            <div class="nav-img"><span class="nav-cnt" id="buycart-cnt">00</span></div>
+                            <div class="nav-tit">구매카트</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+			
+			<!-- content -->
+            <div class="c-wrap">
+                <!-- 기타 페이지 -->
+                <section class="c-etc">
+                    <!-- 페이지 상단바 -->
+                    <div class="c-topbar-area">
+                        <div class="c-topbar-left">
+                            <a href="javascript:history.back();"><img src="assets/img/btn_previous.png" alt="뒤로가기"></a>
+                        </div>
+                        
+                        <div class="c-topbar-center">서비스 이용약관</div>
+                    </div>
+                    
+                    <div class="etc-area">
+                        <p class="big">제1장 총칙</p>
+                        <p class="small">
+                            제 1 조 목적) 이 약관은 회사가 온라인으로 제공하는 디지털 콘텐츠 (이하 콘텐츠라고 한다) 및 제반서비스의 이용과 관련하여 회사와 이용자와의 권리, 의무 및 책임사항 등을 규정함을 목적으로 합니다.<br>
+                            제 2 조 정의) 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                            <span class="txt-indent">1. 회사라 함은 콘텐츠 산업과 관련된 경제 활동을 영위하는 자로서 콘텐츠 및 제반서비스를 제공하는 자를 말합니다.</span>
+                            <span class="txt-indent">2. 이용자라 함은 회사의 사이트에 접속하여 이 약관에 따라 회사가 제공하는 콘텐츠 및 제반서비스를 이용하는 회원 및 비회원을 말합니다.</span>
+                            <span class="txt-indent">3. 회원이라 함은 회사와 이용계약을 체결하고 이용자 아이디를 부여받은 이용자로서 회사의 정보를 지속적으로 제공받으며 회사가 제공하는 서비스를 지속적으로 이용할 수 있는 자를 말합니다.</span>
+                            <span class="txt-indent">4. 비회원이라 함은 회원이 아니면서 회사가 제공하는 서비스를 이용하는 자를 말합니다.</span>
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <!-- //content -->
+            
+            <!-- layer -->
+            <div class="layer-wrap" id="alert-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn confirm-btn">확인</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layer-wrap" id="confirm-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn half-btn confirm-btn">확인</button>
+                        <button type="button" class="layer-btn half-btn close-btn" onclick="closeLayer(this);">취소</button>
+                    </div>
+                </div>
+            </div>
+            <!-- //layer -->
+		</div>
+	</body>
+</html>

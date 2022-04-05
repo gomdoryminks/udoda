@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:url" content="">
+        <meta property="og:title" content="우도다">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="assets/img/logo-favicon.ico">
+        <meta property="og:description" content="우도다">
+		<title>우도다</title>
+		<meta name="description" content="우도다">
+		<meta name="author" content="minks">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+		<meta name="format-detection" content="telephone=no, address=no, email=no">
+		<link rel="shortcut icon" href="assets/img/logo-favicon.ico">
+		<link rel="apple-touch-icon" href="assets/img/logo-favicon.ico">
+		
+		<link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/font.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/vendors/css/base/elisyam-1.5.min.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/swiper.min.css" type="text/css" rel="stylesheet">
+		<link href="assets/css/common.css" type="text/css" rel="stylesheet">
+        <link href="assets/css/mobile-main.css" type="text/css" rel="stylesheet">
+		
+		<!--[if lt IE 9]>
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+		<script src="assets/js/html5shiv.js"></script>
+		<![endif]-->
+		
+		<!--[if gte IE 9]>
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<![endif]-->
+		
+		<!--[if !IE]>--> 
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<!--<![endif]-->
+		
+		<script src="assets/js/jquery-migrate-1.4.1.min.js"></script>
+        <script src="assets/vendors/js/base/core.js"></script>
+        <script src="assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+        <script src="assets/vendors/js/app/app.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment.min.js"></script>
+        <script src="assets/vendors/js/datepicker/moment-with-locales.js"></script>
+        <script src="assets/vendors/js/datepicker/daterangepicker.js"></script>
+        <script src="assets/js/components/datepicker/daterangepicker.js"></script>
+		<script src="assets/js/swiper.min.js"></script>
+        <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7c27b395b09309e57fc0371fe6668b50&libraries=services,clusterer" type="text/javascript"></script>
+        <script src="assets/js/mobile-map.js"></script>
+        <script src="assets/js/mobile-main.js"></script>
+	</head>
+
+	<body>
+		<div class="m-wrap">
+            <!-- header -->
+            <header class="header">
+                <h1 class="not-view">header</h1>
+                
+                <div class="header-logo">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="로고"></a>
+                </div>
+                
+                <div class="header-menu">
+                    <div class="menu-btn"><img src="assets/img/btn_menu.png" alt="메뉴"></div>
+                    
+                    <div class="menu-area">
+                        <div class="menu-mask"></div>
+                        <div class="menu-box">
+                            <div class="menu-box-btn"><img src="assets/img/close_white.png" alt="메뉴닫기"></div>
+                            <ul class="menu-box-top cf">
+                                <li><a href="login-index.html">로그인</a></li>
+                                <li><a href="join-email.html">회원가입</a></li>
+                            </ul>
+                            <div class="menu-box-content">
+                                <ul class="menu-box-list cf">
+                                    <li><a href="notice-list.html">공지사항</a></li>
+                                    <li><a href="faq-list.html">고객센터</a></li>
+                                    <li><a href="order-list.html">주문내역 <span>(9개)</span></a></li>
+                                    <li><a href="voucher-list.html">나의바우처 <span>(15개)</span></a></li>
+                                    <li><a href="inquiry-list.html">상품문의 <span>(0개)</span></a></li>
+                                    <li><a href="setting.html">설정</a></li>
+                                </ul>
+                                <!-- footer -->
+                                <footer class="footer">
+                                    <h1 class="not-view">footer</h1>
+
+                                    <ul class="footer-link-list cf">
+                                        <li><a href="agreement.html">서비스이용약관</a></li>
+                                        <li><a href="policy.html">개인정보처리방침</a></li>
+                                    </ul>
+                                    <div class="footer-info">
+                                        제이아이엔 시스템 (주) 대표 김병석<br>사업자등록번호 353-81-01256<br>통신판매업신고번호<br>제주특별자치도 제주시 첨단로 199 MJ벤처오름 212호<br>문의 064-722-0442<br>고객센터 cs@jin-system.kr
+                                    </div>
+                                </footer>
+                            </div>
+                            <!-- //footer -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header-search">
+                    <a href="search.html"><img src="assets/img/btn_search.png" alt="검색"></a>
+                </div>
+            </header>
+            <!-- //header -->
+            
+            <!-- nav -->
+            <nav class="nav">
+                <h1 class="not-view">nav</h1>
+                
+                <ul class="nav-list cf">
+                    <li class="nav-attraction">
+                        <a href="attraction-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">우도여행지</div>
+                        </a>
+                    </li>
+                    <li class="nav-activity on">
+                        <a href="activity-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">렌트·숙박<br>액티비티</div>
+                        </a>
+                    </li>
+                    <li class="nav-magazine">
+                        <a href="magazine-list.html">
+                            <div class="nav-img"></div>
+                            <div class="nav-tit">매거진</div>
+                        </a>
+                    </li>
+                    <li class="nav-tourcart">
+                        <a href="tourcart.html">
+                            <div class="nav-img"><span class="nav-cnt" id="tourcart-cnt">0</span></div>
+                            <div class="nav-tit">여행카트</div>
+                        </a>
+                    </li>
+                    <li class="nav-buycart">
+                        <a href="buycart.html">
+                            <div class="nav-img"><span class="nav-cnt" id="buycart-cnt">00</span></div>
+                            <div class="nav-tit">구매카트</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- //nav -->
+			
+			<!-- content -->
+            <div class="c-wrap">
+                <!-- 맵 -->
+                <section class="c-map"></section>
+                
+                <!-- 리스트 페이지 -->
+                <section class="c-list">
+                    <!-- 리스트 카테고리 -->
+                    <div class="list-category-btn on">
+                        <div class="list-btn"></div>
+
+                        <ul class="list-category cf">
+                            <li>
+                                <input type="radio" name="list_category" id="list_category_mobility" value="mobility">
+                                <label for="list_category_mobility">
+                                    <img src="assets/img/icon_car.png" alt="렌트/이동수단" class="img">
+                                    <span class="txt">렌트/이동수단</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="list_category" id="list_category_activity" value="activity">
+                                <label for="list_category_activity">
+                                    <img src="assets/img/icon_activity.png" alt="액티비티/체험" class="img">
+                                    <span class="txt">액티비티/체험</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="radio" name="list_category" id="list_category_hotel" value="hotel">
+                                <label for="list_category_hotel">
+                                    <img src="assets/img/icon_hotel.png" alt="숙박" class="img">
+                                    <span class="txt">숙박</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 카테고리에 따라 list-category-info 클래스 태그 안의 내용이 변경됨 -->
+                    <div class="list-category-info">
+                        <!-- 우도를 달리다 -->
+                        <article class="c-slide-area">
+                            <div class="c-tit">우도를 달리다</div>
+
+                            <div class="swiper-container c-slide list-slide">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide" style="background-image: url('assets/img/우도를달리다01.png');">
+                                        <a href="activity-detail.html">
+                                            <div class="slide-mask"></div>
+                                            <div class="slide-info">
+                                                <div class="slide-tit">해안 순환버스 1DAY PASS</div>
+                                                <div class="slide-addr">제주시 우도면 연평리</div>
+                                            </div>
+                                            <div class="slide-price">&#8361; 6,000</div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide" style="background-image: url('assets/img/우도를달리다02.png');">
+                                        <a href="activity-detail.html">
+                                            <div class="slide-mask"></div>
+                                            <div class="slide-info">
+                                                <div class="slide-tit">올레 전기차</div>
+                                                <div class="slide-addr">제주시 우도면 연평리</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide" style="background-image: url('assets/img/우도를달리다01.png');">
+                                        <a href="activity-detail.html">
+                                            <div class="slide-mask"></div>
+                                            <div class="slide-info">
+                                                <div class="slide-tit">해안 순환버스 1DAY PASS</div>
+                                                <div class="slide-addr">제주시 우도면 연평리</div>
+                                            </div>
+                                            <div class="slide-price">&#8361; 6,000</div>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide" style="background-image: url('assets/img/우도를달리다02.png');">
+                                        <a href="activity-detail.html">
+                                            <div class="slide-mask"></div>
+                                            <div class="slide-info">
+                                                <div class="slide-tit">올레 전기차</div>
+                                                <div class="slide-addr">제주시 우도면 연평리</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                        
+                        <!-- 이동수단 리스트 -->
+                        <article class="list-info-area">
+                            <ul class="list-order cf">
+                                <li>
+                                    <a href="javascript:void(0);" data-list-order="latest" onclick="setListOrder(this);">최신순</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" data-list-order="popular" onclick="setListOrder(this);">인기순</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);" data-list-order="distance" onclick="setListOrder(this);">거리순</a>
+                                </li>
+                            </ul>
+                            
+                            <!-- 정렬에 따라 list-info 클래스 태그 안의 내용이 변경됨 -->
+                            <div class="list-info">
+                                <ul class="list-info-list cf">
+                                    <li>
+                                        <a href="activity-detail.html">
+                                            <div class="list-info-img" style="background-image: url('assets/img/올레스쿠터.png');">
+                                                <div class="list-info-mask"></div>
+                                                <div class="list-info-price">&#8361; 6,000</div>
+                                            </div>
+                                            <div class="list-info-txt">
+                                                <div class="list-info-tit">올레스쿠터</div>
+                                                <ul class="list-info-tag cf">
+                                                    <li>#면허소지</li>
+                                                    <li>#우도구석구석</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="activity-detail.html">
+                                            <div class="list-info-img" style="background-image: url('assets/img/올레스쿠터.png');">
+                                                <div class="list-info-mask"></div>
+                                                <div class="list-info-price">&#8361; 6,000</div>
+                                            </div>
+                                            <div class="list-info-txt">
+                                                <div class="list-info-tit">올레스쿠터</div>
+                                                <ul class="list-info-tag cf">
+                                                    <li>#면허소지</li>
+                                                    <li>#우도구석구석</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="activity-detail.html">
+                                            <div class="list-info-img" style="background-image: url('assets/img/올레스쿠터.png');">
+                                                <div class="list-info-mask"></div>
+                                                <div class="list-info-price">&#8361; 6,000</div>
+                                            </div>
+                                            <div class="list-info-txt">
+                                                <div class="list-info-tit">올레스쿠터</div>
+                                                <ul class="list-info-tag cf">
+                                                    <li>#면허소지</li>
+                                                    <li>#우도구석구석</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="activity-detail.html">
+                                            <div class="list-info-img" style="background-image: url('assets/img/올레스쿠터.png');">
+                                                <div class="list-info-mask"></div>
+                                                <div class="list-info-price">&#8361; 6,000</div>
+                                            </div>
+                                            <div class="list-info-txt">
+                                                <div class="list-info-tit">올레스쿠터</div>
+                                                <ul class="list-info-tag cf">
+                                                    <li>#면허소지</li>
+                                                    <li>#우도구석구석</li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            <!-- //content -->
+            
+            <!-- layer -->
+            <div class="layer-wrap" id="alert-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn confirm-btn">확인</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layer-wrap" id="confirm-layer">
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <div class="layer-content">
+                        <div class="layer-content-txt"></div>
+                    </div>
+                    <div class="layer-btn-area cf">
+                        <button type="button" class="layer-btn half-btn confirm-btn">확인</button>
+                        <button type="button" class="layer-btn half-btn close-btn" onclick="closeLayer(this);">취소</button>
+                    </div>
+                </div>
+            </div>
+            <!-- //layer -->
+		</div>
+	</body>
+</html>
