@@ -46,7 +46,7 @@
         <script src="assets/vendors/js/datepicker/daterangepicker.js"></script>
         <script src="assets/js/components/datepicker/daterangepicker.js"></script>
 		<script src="assets/js/swiper.min.js"></script>
-        <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=7c27b395b09309e57fc0371fe6668b50&libraries=services,clusterer" type="text/javascript"></script>
+        <script src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=7c27b395b09309e57fc0371fe6668b50&libraries=services,clusterer" type="text/javascript"></script>
         <script src="assets/js/mobile-map.js"></script>
         <script src="assets/js/mobile-main.js"></script>
 	</head>
@@ -216,6 +216,16 @@
                         </ul>
                     </div>
                 </section>
+                
+                <!-- 지도 아이콘 버튼 -->
+                <section class="map-iconbtn-area">
+                    <a href="javascript:void(0);" class="map-iconbtn"></a>
+                    <ul class="map-iconbtn-list">
+                        <li class="map-iconbtn-weather layer-open-btn" onclick="openMapWeatherLayer();"></li>
+                        <li class="map-iconbtn-ship layer-open-btn" onclick="openMapShipLayer();"></li>
+                        <li class="map-iconbtn-bus layer-open-btn" onclick="openMapBusLayer();"></li>
+                    </ul>
+                </section>
             </div>
             <!-- //content -->
             
@@ -343,6 +353,77 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+            
+            <!-- 날씨정보 -->
+            <div class="layer-wrap layer-all-wrap" id="map-weather-layer">
+                <button type="button" class="layer-hidden-btn" onclick="closeLayer(this);">닫기</button>
+                <div class="layer-box">
+                    <!-- 레이어 제목 -->
+                    <div class="layer-title">
+                        <button type="button" class="layer-left-btn layer-img-btn layer-close-btn" onclick="closeLayer(this);"><img src="assets/img/btn_previous.png" alt="레이어닫기"></button>
+                        <div class="layer-title-txt">날씨정보</div>
+                    </div>
+                    <!-- 레이어 내용 -->
+                    <div class="layer-content"></div>
+                </div>
+            </div>
+            
+            <!-- 배편 -->
+            <div class="layer-wrap layer-all-wrap" id="map-ship-layer">
+                <button type="button" class="layer-hidden-btn" onclick="closeLayer(this);">닫기</button>
+                <div class="layer-box">
+                    <!-- 레이어 제목 -->
+                    <div class="layer-title">
+                        <button type="button" class="layer-left-btn layer-img-btn layer-close-btn" onclick="closeLayer(this);"><img src="assets/img/btn_previous.png" alt="레이어닫기"></button>
+                        <div class="layer-title-txt">배편</div>
+                    </div>
+                    <!-- 레이어 내용 -->
+                    <div class="layer-content"></div>
+                </div>
+            </div>
+            
+            <!-- 배편 요금표 안내 -->
+            <div class="layer-wrap" id="ship-price-layer">
+                <button type="button" class="layer-hidden-btn" onclick="closeLayer(this);">닫기</button>
+                <div class="layer-mask"></div>
+                <div class="layer-box">
+                    <!-- 레이어 상단 버튼 -->
+                    <div class="layer-topbtn-area">
+                        <div class="layer-left-btn layer-txt-btn"></div>
+                        <button type="button" class="layer-right-btn layer-img-btn" onclick="closeLayer(this);"><img src="assets/img/icon_close_pop.png" alt="레이어닫기"></button>
+                    </div>
+                    <!-- 레이어 내용 -->
+                    <div class="layer-content"></div>
+                </div>
+            </div>
+            
+            <!-- 버스편 -->
+            <div class="layer-wrap layer-all-wrap" id="map-bus-layer">
+                <button type="button" class="layer-hidden-btn" onclick="closeLayer(this);">닫기</button>
+                <div class="layer-box">
+                    <!-- 레이어 제목 -->
+                    <div class="layer-title">
+                        <button type="button" class="layer-left-btn layer-img-btn layer-close-btn" onclick="closeLayer(this);"><img src="assets/img/btn_previous.png" alt="레이어닫기"></button>
+                        <div class="layer-title-txt">버스편</div>
+                    </div>
+                    <!-- 레이어 내용 -->
+                    <div class="layer-content"></div>
+                </div>
+            </div>
+            
+            <!-- 버스편 시간표 -->
+            <div class="layer-wrap layer-all-wrap" id="bus-timetable-layer">
+                <button type="button" class="layer-hidden-btn" onclick="closeLayer(this);">닫기</button>
+                <div class="layer-box">
+                    <!-- 레이어 제목 -->
+                    <div class="layer-title">
+                        <button type="button" class="layer-left-btn layer-img-btn" onclick="closeLayer(this);"><img src="assets/img/btn_previous.png" alt="레이어닫기"></button>
+                        <div class="layer-title-txt">버스편</div>
+                    </div>
+                    <!-- 레이어 내용 -->
+                    <div class="layer-content"></div>
                 </div>
             </div>
             <!-- //layer -->
