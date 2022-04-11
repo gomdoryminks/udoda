@@ -161,6 +161,26 @@ nav.nav {
     max-height: calc(constant(safe-area-inset-bottom) + 100vh - 60px);
     max-height: calc(env(safe-area-inset-bottom) + 100vh - 60px);
 }
+.map-iconbtn-area {
+    top: calc(constant(safe-area-inset-top) + 60px);
+    top: calc(env(safe-area-inset-top) + 60px);
+}
+.map-iconbtn-area .map-iconbtn-list>li {
+    top: calc(constant(safe-area-inset-top) - 5px);
+    top: calc(env(safe-area-inset-top) - 5px);
+}
+.map-iconbtn-area .map-iconbtn.on + .map-iconbtn-list .map-iconbtn-weather {
+    top: calc(constant(safe-area-inset-top) + 35px);
+    top: calc(env(safe-area-inset-top) + 35px);
+}
+.map-iconbtn-area .map-iconbtn.on + .map-iconbtn-list .map-iconbtn-ship {
+    top: calc(constant(safe-area-inset-top) + 80px);
+    top: calc(env(safe-area-inset-top) + 80px);
+}
+.map-iconbtn-area .map-iconbtn.on + .map-iconbtn-list .map-iconbtn-bus {
+    top: calc(constant(safe-area-inset-top) + 125px);
+    top: calc(env(safe-area-inset-top) + 125px);
+}
 
 @media screen and (max-width: 550px) {
     .c-list .list-category-btn.on + .list-category-info {
