@@ -614,7 +614,7 @@ function mobilityMarker() {
         var dataItemWidth = $(this).outerWidth() + 20 + 39;
         
         $(this).parent().prev().css({display:"none"});
-        $(this).parent().parent().css({display:"none"});
+        $(this).parent().parent().css({display:"none",height:'0px'});
         $(this).parent().parent().addClass("info-window-area iw-" + dataItemType);
         $(this).parent().parent().attr("id","iw-" + dataItemType + "-" + dataItemId);
         $(this).parent().parent().prev().addClass("marker-area m-" + dataItemType);
@@ -771,7 +771,7 @@ function listMarker(type) {
         var dataItemWidth = $(this).outerWidth() + 20 + 39;
         
         $(this).parent().prev().css({display:"none"});
-        $(this).parent().parent().css({display:"none"});
+        $(this).parent().parent().css({display:"none",height:'0px'});
         $(this).parent().parent().addClass("info-window-area iw-" + dataItemType + "-" + dataItemType2);
         $(this).parent().parent().attr("id","iw-" + dataItemType + "-" + dataItemType2 + "-" + dataItemId);
         $(this).parent().parent().prev().addClass("marker-area m-" + dataItemType + "-" + dataItemType2);
@@ -888,7 +888,7 @@ function cartMarker(type) {
         var dataItemWidth = $(this).outerWidth() + 20 + 39;
         
         $(this).parent().prev().css({display:"none"});
-        $(this).parent().parent().css({display:"none"});
+        $(this).parent().parent().css({display:"none",height:'0px'});
         $(this).parent().parent().addClass("info-window-area iw-" + dataItemType);
         $(this).parent().parent().attr("id","iw-" + dataItemType + "-" + dataItemId);
         $(this).parent().parent().prev().addClass("marker-area m-" + dataItemType);
@@ -1019,7 +1019,7 @@ function searchMarker() {
         var dataItemWidth = $(this).outerWidth() + 20 + 39;
         
         $(this).parent().prev().css({display:"none"});
-        $(this).parent().parent().css({display:"none"});
+        $(this).parent().parent().css({display:"none",height:'0px'});
         $(this).parent().parent().addClass("info-window-area iw-" + dataItemType);
         $(this).parent().parent().attr("id","iw-" + dataItemType + "-" + dataItemId);
         $(this).parent().parent().prev().addClass("marker-area m-" + dataItemType);
