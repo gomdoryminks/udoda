@@ -4078,6 +4078,9 @@
 }
 .layer-wrap .layer-box .layer-content .layer-ship-tit {
     margin: 30px 0 10px;
+    color: #0e7854;
+    font-size: 2em;
+    word-break: keep-all;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4087,16 +4090,12 @@
 .layer-wrap .layer-box .layer-content .layer-ship-tit:first-child {
     margin-top: 0;
 }
-.layer-wrap .layer-box .layer-content .layer-ship-tit .layer-ship-txt {
-    color: #0e7854;
-    font-size: 2em;
-    word-break: keep-all;
-}
 .layer-wrap .layer-box .layer-content .layer-ship-tit .layer-ship-btn {
     min-height: 30px;
     padding: 8px 15px;
     background-color: #0e7854;
     color: #ffffff;
+    font-size: 0.5em;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     -ms-border-radius: 2px;
@@ -4129,6 +4128,22 @@
     color: #0e7854;
     font-size: 2em;
     word-break: keep-all;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.layer-wrap .layer-box .layer-content .layer-bus-tit .layer-bus-btn {
+    min-height: 30px;
+    padding: 8px 15px;
+    background-color: #0e7854;
+    color: #ffffff;
+    font-size: 0.5em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
 }
 .layer-wrap#map-bus-layer .layer-box .layer-content .c-table tr td a {
     color: #0e7854;
@@ -4136,6 +4151,28 @@
 .layer-wrap#map-bus-layer .layer-box .layer-content .c-table tr td a:hover,
 .layer-wrap#map-bus-layer .layer-box .layer-content .c-table tr td a:focus {
     text-decoration: underline;
+}
+.layer-wrap .layer-box .layer-content .layer-udo-bus-area {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.layer-wrap .layer-box .layer-content .layer-udo-bus-area .layer-udo-bus-tit {
+    margin-top: 50px;
+    color: #0e7854;
+    font-size: 1.625em;
+    word-break: keep-all;
+}
+.layer-wrap .layer-box .layer-content .layer-udo-bus-area .layer-udo-bus-tit:first-child {
+    margin-top: 0;
+}
+.layer-wrap .layer-box .layer-content .layer-udo-bus-area .layer-udo-bus-con {
+    margin-top: 10px;
+}
+.layer-wrap .layer-box .layer-content .layer-udo-bus-area img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }
 .layer-wrap .layer-box .layer-btn-area .layer-btn {
     width: 100%;
@@ -4169,9 +4206,16 @@
     }
     .layer-wrap .layer-box .layer-content .layer-voucher-tit,
     .layer-wrap .layer-box .layer-content .layer-weather-tit,
-    .layer-wrap .layer-box .layer-content .layer-ship-tit .layer-ship-txt,
+    .layer-wrap .layer-box .layer-content .layer-ship-tit,
     .layer-wrap .layer-box .layer-content .layer-bus-tit {
         font-size: 1.625em;
+    }
+    .layer-wrap .layer-box .layer-content .layer-ship-tit .layer-ship-btn,
+    .layer-wrap .layer-box .layer-content .layer-bus-tit .layer-bus-btn {
+        font-size: 0.615em;
+    }
+    .layer-wrap .layer-box .layer-content .layer-udo-bus-area .layer-udo-bus-tit {
+        font-size: 1.375em;
     }
 }
 
