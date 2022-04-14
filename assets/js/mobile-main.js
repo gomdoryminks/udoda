@@ -2017,7 +2017,10 @@ function openShipPriceLayer(type) {
 function openMapBusLayer() {
     var layerHtml = "";
     
-    layerHtml += "<div class='layer-bus-tit'>제주 성산항 버스</div>";
+    layerHtml += "<div class='layer-bus-tit'>";
+    layerHtml += "    <div class='layer-bus-txt'>제주 성산항 버스</div>";
+    layerHtml += "    <button type='button' class='layer-bus-btn' onclick='openUdoBusTimetableLayer();'>우도 버스 시간표</button>";
+    layerHtml += "</div>";
     layerHtml += "<table class='c-table'>";
     layerHtml += "    <colgroup>";
     layerHtml += "        <col width='*'>";
@@ -3007,6 +3010,38 @@ function openBusTimetableLayer(idx) {
     $("#bus-timetable-layer .layer-box .layer-content").html(layerHtml);
     
     $("#bus-timetable-layer").addClass("on");
+    
+    var scrollTop = parseInt($(document).scrollTop());
+
+    $("body").css("top", -scrollTop + "px");
+
+    $("body").addClass("scroll-disable").on('scroll touchmove', function(event) {
+        event.preventDefault();
+    });
+}
+
+//버스편 우도 버스 시간표 레이어 팝업 열기
+function openUdoBusTimetableLayer() {
+    var layerHtml = "";
+    
+    layerHtml += "<div class='layer-udo-bus-area'>";
+    layerHtml += "    <div class='layer-udo-bus-tit'>1. 주요관광지 시간표</div>";
+    layerHtml += "    <div class='layer-udo-bus-con'><img src='assets/img/주요관광지_시간표.png' alt='주요관광지 시간표'></div>";
+    layerHtml += "    <div class='layer-udo-bus-con'><img src='assets/img/주요관광지_시간표2.png' alt='주요관광지 시간표'></div>";
+    layerHtml += "    <div class='layer-udo-bus-con'><img src='assets/img/주요관광지_시간표3.jpg' alt='주요관광지 시간표'></div>";
+    layerHtml += "    <div class='layer-udo-bus-tit'>2. 우도 마을 (안길) 노선 버스 시간표</div>";
+    layerHtml += "    <div class='layer-udo-bus-con'><img src='assets/img/우도_마을_(안길)_노선_버스_시간표.png' alt='우도 마을 (안길) 노선 버스 시간표'></div>";
+    layerHtml += "    <div class='layer-udo-bus-con'><img src='assets/img/우도_마을_(안길)_노선_버스_시간표2.png' alt='우도 마을 (안길) 노선 버스 시간표'></div>";
+    layerHtml += "    <div class='layer-udo-bus-tit'>3. 해안도로 노선버스 운행 시간표 (홀수일)</div>";
+    layerHtml += "    <div class='layer-udo-bus-con'><img src='assets/img/해안도로_노선버스_운행_시간표_(홀수일).png' alt='해안도로 노선버스 운행 시간표 (홀수일)'></div>";
+    layerHtml += "    <div class='layer-udo-bus-tit'>4. 해안도로 노선버스 운행 시간표 (짝수일)</div>";
+    layerHtml += "    <div class='layer-udo-bus-con'><img src='assets/img/해안도로_노선버스_운행_시간표_(짝수일).png' alt='해안도로 노선버스 운행 시간표 (짝수일)'></div>";
+    layerHtml += "    <div class='layer-udo-bus-con'><img src='assets/img/해안도로_노선버스_운행_시간표_(짝수일)2.jpg' alt='해안도로 노선버스 운행 시간표 (짝수일)'></div>";
+    layerHtml += "</div>";
+    
+    $("#udo-bus-timetable-layer .layer-box .layer-content").html(layerHtml);
+    
+    $("#udo-bus-timetable-layer").addClass("on");
     
     var scrollTop = parseInt($(document).scrollTop());
 
