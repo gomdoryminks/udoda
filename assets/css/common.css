@@ -61,8 +61,9 @@ input[type="checkbox"] {
     clip:rect(0,0,0,0);
 }
 input[type="checkbox"] + label {
-    margin: 5px 0;
+    margin: 5px 0 5px 25px;
     color: #494949;
+    text-indent: -25px;
 }
 input[type="checkbox"] + label:before {
     content: '';
@@ -225,6 +226,12 @@ img {
     }
 }
 
+@media screen and (max-width: 350px) {
+    input[type="radio"] + label {
+        padding: 11px 3px 9px;
+    }
+}
+
 /************************************************
 
 					header
@@ -322,6 +329,11 @@ header.header .header-menu .menu-area .menu-box .menu-box-top>li {
 }
 header.header .header-menu .menu-area .menu-box .menu-box-top>li.profile {
     flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header.header .header-menu .menu-area .menu-box .menu-box-top>li a {
     color: #ffffff;
@@ -342,7 +354,7 @@ header.header .header-menu .menu-area .menu-box .menu-box-top>li.profile .img im
     height: auto;
 }
 header.header .header-menu .menu-area .menu-box .menu-box-top>li.profile .txt {
-    width: calc(100% - 76px);
+    width: calc(100% - 75px);
     display: inline-block;
     vertical-align: middle;
     color: #ffffff;
