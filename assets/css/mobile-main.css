@@ -1741,6 +1741,7 @@
     display: inline-block;
     vertical-align: top;
     margin: 0;
+    text-indent: 0;
 }
 .c-buycart .buycart-area .buycart-goods-area .buycart-goods-info .goods-info-list>li .goods-info-top .goods-info-content .goods-info-img img {
     width: calc(100% - 30px);
